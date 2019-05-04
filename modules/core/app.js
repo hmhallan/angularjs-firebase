@@ -31,8 +31,9 @@
 
 
     //run
-    app.run(function() {
-
+    app.run(function( FIREBASE_CONFIG ) {
+        // Initialize Firebase
+        firebase.initializeApp(FIREBASE_CONFIG);
     });
 
 }).call(this);

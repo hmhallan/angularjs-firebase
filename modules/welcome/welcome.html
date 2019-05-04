@@ -1,5 +1,33 @@
 <div class="row">
     <div class="col-xs-12 col-sm-8 col-sm-push-2">
-        <h1 class="text-center">Bem Vindo!</h1>
+        <br/>
+        <h1 class="text-center">Cloud Cafe</h1>
+        <br/>
+
+        <div class="content">
+
+            <form class="form-inline" ng-submit="addCafe()">
+                <div class="form-group">
+                    <input class="form-control mb-2 mr-sm-2" type="text" name="name" ng-model="cafe.name" placeholder="Cafe name">
+                </div>
+                <div class="form-group">
+                    <input class="form-control mb-2 mr-sm-2" type="text" name="city" ng-model="cafe.city"  placeholder="Cafe city">
+                </div>
+                <button class="btn btn-success mb-2" type="submit">Add Cafe</button>
+            </form>
+
+            <hr/>
+
+            <div class="card" ng-repeat="c in cafeList">
+                <div class="card-body">
+                    <button class="btn badge badge-danger badge-pill float-right" type="button" ng-click="removeCafe(c)">X</button>
+                    <h4 class="card-title">{{c.name}}</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">{{c.city}}</h6>
+                    
+                </div>
+            </div>
+
+        </div>
+
     </div>
 </div>
