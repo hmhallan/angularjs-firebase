@@ -11,11 +11,14 @@
                                 'ngRoute',
                                 'ngAnimate',
                                 'ngSanitize',
-                                'ui.bootstrap'
+                                'ui.bootstrap',
+                                'blockUI'
                              ]);
                     
     //route provider
-    app.config(['$routeProvider', function($routeProvider){
+    app.config(['$routeProvider', 'blockUIConfig', function($routeProvider, blockUIConfig){
+
+        blockUIConfig.message = 'Aguarde!';
 
         $routeProvider
         .when('/welcome', {
