@@ -1,0 +1,33 @@
+{
+    "name": "app",
+    "version": "1.0.0-SNAPSHOT",
+    "description": "template app angularjs",
+    "main": "app.js",
+    "directories": {
+      "test": "test"
+    },
+    "scripts": {
+      "dev": "lite-server",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/hmhallan/democracia.git"
+    },
+    "contributors": [
+      {
+        "name": "Hallan Medeiros"
+      }
+    ],
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/hmhallan/democracia/issues"
+    },
+    "homepage": "https://github.com/hmhallan/democracia#readme",
+    "devDependencies": {
+      "lite-server": "^2.3.0"
+    },
+    "dependencies": {
+      "truffle": "^4.0.6"
+    }
+  }
